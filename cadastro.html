@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <section class="cadastro">
+        <form>
+            <h1>Seja bem-vindo</h1>
+            <h2>Realize aqui seu cadastro</h2>
+            <section class="campos">
+                    <input class="preecher" type="text" placeholder="Digite seu nome" required minlength="3">
+                    <input class="preecher" type="email" placeholder="Digite um email" required>
+                    <input class="preecher" type="password" placeholder="Digite uma senha" minlength="8" required>
+                    <input class="preecher" type="password" minlength="8" placeholder="Confirme sua senha" required>
+                <section class="idade">
+                    <label for="idade">Idade</label>
+                    <input type="number" min="18" max="70" required>
+                </section>
+                <section class="genero">
+                    <label for="genero">Gênero</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label>
+                </section>
+            </section>
+            <section class="botao">
+                <button type="submit">Cadastrar</button>
+            </section>
+            <section class="entrar">
+                <p>Já possui uma conta?</p>
+                <a href="/login.html">Entrar</a>
+            </section>
+        </form>
+    </section>
+</body>
+</html>

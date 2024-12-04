@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+.suporte{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 25px;
+    width: 100%;
+    background-color: rgb(255, 163, 110);
+}
+
+.suporte ul{
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.suporte ul a{
+    margin: 0 0.4%;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.suporte p{
+    margin: 0 0.4%;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+header{
+    padding: 1% 10%;
+    background-color: rgb(255, 102, 0);
+    position: sticky;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav section{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav section a{
+    color: white;
+}
+
+nav .links a{   
+    margin: 10px 25px;
+    color: white;
+    transition: .2s;
+}
+
+nav .links:hover a{
+    opacity: .5;
+}
+
+nav .links a:hover{
+    transform: scale(1.2);
+    opacity: 1;
+
+}
+
+nav p{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding: 15px;
+}
+
+nav form{
+    display: flex;
+    align-items: center;
+}
+
+nav form button{
+    border: none;
+    background-color: transparent;
+    width: 38px;
+    height: 38px;
+}
+
+nav form label{
+    cursor: pointer;
+    color: white;
+
+}
+
+nav form input{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(154, 59, 0);
+    padding: 18px 15px;
+    outline: none;
+    border: none;
+}
+
+main .banner{
+    display: flex;
+    border: 5px solid black;
+}
+
+main .categoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 163, 110);
+}
+
+main .categoria a{
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+main .categoria a:hover{
+    transform: scale(1.2); 
+    color: white;
+}
+
+main img{
+    width: 50%;
+}
+
+main .card .oferta{
+    width: 100%;
+    margin: 30px 0px;
+    padding: 1% 12%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgb(255, 102, 0);
+    color: white;
+}
+
+main .card .oferta svg{
+    margin: 10px 20px 5px 0px;
+}
+
+main .card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .card .produtos{
+    display: flex;
+
+}
+
+main .card article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 320px;
+    height: 450px;
+    margin: 20px 35px 80px 35px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px grey;
+    cursor: pointer;
+    border-bottom: 20px solid rgb(255, 102, 0);
+    transition: .2s;
+}
+
+main .card:hover article{
+    transform: scale(1);
+}
+
+main .card article:hover{
+    transform: scale(1.1);
+}
+
+main .card article h2{
+    color: rgb(255, 102, 0);
+    text-shadow: 0 0 1px ;
+}
+
+main .card article img{
+    width: 60%;
+
+}
+
+main .card article .descricao{
+    color: grey;
+    font-weight: 600;
+    margin:5px 0px;
+}
+
+main .card article .desconto{
+    color: grey;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+main .video{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .video iframe{
+    border-radius: 20px;
+    box-shadow: 0 0 5px grey;
+}
+
+main .destaques{
+    padding: 0% 10%;
+    display: flex;
+    gap: 30px;
+
+}
+
+main .destaques a img{
+    width: 100%;
+    height: 80%;
+
+}
+
+main h2{
+    font-size: 30px;
+    margin: 3% 10% 1% 10%;
+}
